@@ -1,4 +1,5 @@
 1. General Description 
+
 The ULMFiT research tool main goal is to examine the operation of the ULMFiT 
 algorithm. With the help of the tool, the algorithm can be applied to different languages and 
 NLP tasks. For the different NLP tasks that are available in the system, the algorithm is 
@@ -47,6 +48,33 @@ format of a ".txt". The file should have the content of a book for the authorshi
 a sentence for the sentiment analysis task. (2) Insert text manually with the "Insert text 
 manually" bar. After the text is loaded, click on the "Predict" button. The system will show the 
 prediction results on the lower-left side of the window.
+
+3. Environment Specification
+
+Using the tool requires configuration to the environment. To run the application, 
+please go through the following steps:
+1) Confirm that the latest Anaconda version is installed, and the latest Python 
+environment (configured with Anaconda) is available.
+2) Create a new environment using Anaconda.
+3) Run "install.bat" which is attached to the project directory. In case of a failure 
+during installation, install manually the following libraries:
+• pyqt5
+• sklearn
+• pandas
+• nltk
+• keras
+• tensorflow
+• matplotlib
+• tensorflow_hub
+• tensorflow_text
+*For the nltk library, an additional download is required:
+On command prompt type –
+Python
+>>import nltk
+>>nltk.download('stopwords')
+4) Navigate using command prompt to the project directory and run the "app.py" 
+file: python app.py
+
 
 *Pay attention that the loaded files should be in the same language all the way through the
 process according to the language of the model.
