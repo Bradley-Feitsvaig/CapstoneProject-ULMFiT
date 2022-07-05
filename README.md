@@ -56,40 +56,40 @@
 
   Using the tool requires configuration to the environment. To run the application, 
   please go through the following steps:
-1) Confirm that the latest Anaconda version is installed, and the latest Python 
-  environment (configured with Anaconda) is available.
-2) Create a new environment using Anaconda.
-3) Run "install.bat" which is attached to the project directory. In case of a failure 
-  during installation, install manually the following libraries:
+  1) Confirm that the latest Anaconda version is installed, and the latest Python 
+    environment (configured with Anaconda) is available.
+  2) Create a new environment using Anaconda.
+  3) Run "install.bat" which is attached to the project directory. In case of a failure 
+    during installation, install manually the following libraries:
 
-  • pyqt5
+    • pyqt5
 
-  • sklearn
+    • sklearn
 
-  • pandas
+    • pandas
 
-  • nltk
+    • nltk
 
-  • keras
+    • keras
 
-  • tensorflow
+    • tensorflow
 
-  • matplotlib
+    • matplotlib
 
-  • tensorflow_hub
+    • tensorflow_hub
 
-  • tensorflow_text
+    • tensorflow_text
 
-  *For the nltk library, an additional download is required:
+    *For the nltk library, an additional download is required:
 
-  On command prompt type –
+    On command prompt type –
 
-  Python
+    Python
 
-  import nltk
+    import nltk
 
-  nltk.download('stopwords')
+    nltk.download('stopwords')
 
-4)Navigate using command prompt to the project directory and run the "app.py" 
+  4)Navigate using command prompt to the project directory and run the "app.py" 
 
-  file: python app.py
+    file: python app.py
