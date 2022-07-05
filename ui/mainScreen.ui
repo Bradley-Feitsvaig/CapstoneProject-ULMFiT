@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="bgwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1300</width>
+     <height>1000</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#bgwidget{
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.943, y2:0.9375, stop:0 rgba(85, 85, 127, 255), stop:1 rgba(255, 255, 255, 255))}</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>45</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>Choose a language model</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="LM_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>42</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>69</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;
+}
+
+QComboBox:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_language_model_button">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>42</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}
+
+QPushButton:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+    <property name="text">
+     <string>Build new language model</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fine_tune_the_model_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>160</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}
+
+QPushButton:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+    <property name="text">
+     <string>Fine tune the model</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>103</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>Choose NLP task</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="task_comboBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>100</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>69</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;
+}
+
+QComboBox:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="choose_tasks_dataset_button">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>100</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}
+
+QPushButton:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+    <property name="text">
+     <string>Choose task's dataset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_for_fine_tune_the_model_gif">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>890</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="return_to_welcome">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>950</y>
+      <width>185</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Return</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/return-button.png</normaloff>../img/return-button.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>200</y>
+      <width>581</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="load_text_file_radioButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>Load text file</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="insert_text_manually_radioButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>Insert text manually</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="load_text_file_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>230</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}
+
+QPushButton:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>290</y>
+      <width>611</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+}
+
+QLineEdit:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>410</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>Prediction</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="predict_button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>350</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}
+
+QPushButton:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+    </property>
+    <property name="text">
+     <string>Predict</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>390</y>
+      <width>581</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="place_for_prediction_plot_label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>410</y>
+      <width>661</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:30pt &quot;MS Shell Dlg 2&quot;;color:rgba(85, 85, 127, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="place_for_prediction_text_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>450</y>
+      <width>331</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="fine_tuning_text">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>409</y>
+      <width>411</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:7pt &quot;MS Shell Dlg 2&quot;;color: rgba(85, 85, 127, 255)
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>10</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QTextEdit::NoWrap</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="clear_page_button">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>950</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}
+
+QPushButton:disabled {
+background-color:rgb(173, 173, 173);
+}</string>
+   </property>
+   <property name="text">
+    <string>Clear page</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

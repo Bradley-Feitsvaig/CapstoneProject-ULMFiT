@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="bgwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#bgwidget{
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.943, y2:0.9375, stop:0 rgba(85, 85, 127, 255), stop:1 rgba(255, 255, 255, 255))}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>90</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:36pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>ULMFiT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>210</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>ULMFiT algorithm Research Tool</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>270</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)
+
+</string>
+    </property>
+    <property name="text">
+     <string>Capstone Project 22-1-D-16</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_button">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>400</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 20pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 20pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/braude_logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="user_help_button">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>460</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 20pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(85, 85, 127, 255);
+border-radius: 20px;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+font: 20pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 255);
+border-radius: 20px;}</string>
+    </property>
+    <property name="text">
+     <string>User Help</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
