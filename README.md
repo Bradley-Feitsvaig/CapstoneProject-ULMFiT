@@ -1,3 +1,4 @@
+*The project book is located in 'docs->Phase B'
 1. General Description 
 
   The ULMFiT research tool main goal is to examine the operation of the ULMFiT 
